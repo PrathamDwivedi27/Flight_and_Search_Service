@@ -23,4 +23,9 @@
 8) npx sequelize init . It will give us extra files like config models seeders migrations.
 9) write your own password in config.json for mysql
 10) npx sequelize db:create = this will create database (you can found in npm sequelize-cli). write this under src becoz config is in src
-11) 
+11) We are using lucid  app to write our table format. Each server should have their own database
+12) Then we will be making table by sequelize cli syntax(in documentation)
+13) It will automatically create id , created_At ,updated_At in migration folder . Becoz these things are common in every table.
+14) These migration files will help us to make incremental changes.Made changes in city.init in city.js and allownull in migration under name. We can make more changes before syncing.
+15) But when you will check table in mysql it will not show you anything. we have to associate/sync it to it.
+16) 
