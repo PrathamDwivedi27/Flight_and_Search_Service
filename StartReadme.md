@@ -28,4 +28,7 @@
 13) It will automatically create id , created_At ,updated_At in migration folder . Becoz these things are common in every table.
 14) These migration files will help us to make incremental changes.Made changes in city.init in city.js and allownull in migration under name. We can make more changes before syncing.
 15) But when you will check table in mysql it will not show you anything. we have to associate/sync it to it.
-16) 
+16) we can do npx sequelize db:migrate
+17) Now when we have models , its time for repository . city_repository.js file 
+18) WE can insert and syntax is in documentation if sequelize insert.
+19) You can find all syntax of sequelize in documentation

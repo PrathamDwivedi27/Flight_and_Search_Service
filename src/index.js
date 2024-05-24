@@ -3,7 +3,6 @@ const bodyParser=require('body-parser');
 
 const {PORT}=require("./config/serverconfig");      //curly braces is important in importing
 
-//we will make an object 
 
 const setupAndStartServer= async()=>{
 
@@ -15,9 +14,10 @@ const setupAndStartServer= async()=>{
 
 
 
-    app.listen(PORT,function process(){
+    app.listen(PORT,async ()=>{
         console.log(`Server started at ${PORT}`);
-    })
+        
+    });
     // console.log(process.env);
 }
 
