@@ -2,7 +2,7 @@ const {CityRepository}=require('../repository/index');
 
 class CityService{
     constructor(){
-        this.cityRepository=new CityRepository();
+        this.cityRepository=new CityRepository();       //we are writing so that you can see different ways of writing class you can directly use CityRepository
     }
 
     async createCity(data){             //humko poora data milega
@@ -47,3 +47,5 @@ class CityService{
 
 
 }
+
+module.exports=CityService;

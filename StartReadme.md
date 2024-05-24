@@ -33,4 +33,7 @@
 18) WE can insert and syntax is in documentation if sequelize insert.
 19) You can find all syntax of sequelize in documentation
 20) Now we have make models,repository, now service layer. make a city-service.js
-21) From city-service.js we will make function call to city repository
+21) From city-service.js we will make function call to city repository.
+22) Now we have done module, then repository, then service, now its time for controller.We can a file in controller. city-controller.js
+23) You don't need to use body parser in controller because at last everything will be called from index.js
+24) 

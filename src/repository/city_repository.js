@@ -18,6 +18,7 @@ class CityRepository{
                     id:cityId
                 },
             });
+            return true;
         } catch(error){
             throw(error);
         }
@@ -30,6 +31,7 @@ class CityRepository{
                     id:cityId
                 }
             });
+            return city;
         } catch (error) {
             console.log("Something went wrong at repository level");
             throw(error);
