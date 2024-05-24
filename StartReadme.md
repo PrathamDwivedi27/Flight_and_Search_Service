@@ -32,3 +32,5 @@
 17) Now when we have models , its time for repository . city_repository.js file 
 18) WE can insert and syntax is in documentation if sequelize insert.
 19) You can find all syntax of sequelize in documentation
+20) Now we have make models,repository, now service layer. make a city-service.js
+21) From city-service.js we will make function call to city repository
