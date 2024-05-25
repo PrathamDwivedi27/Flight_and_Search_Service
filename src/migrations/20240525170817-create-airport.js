@@ -11,23 +11,23 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING,
-        allowNull:false,
+        allowNull: false
       },
       address: {
         type: Sequelize.STRING
       },
       cityId: {
         type: Sequelize.INTEGER,
-        onDelete:'CASCADE',
-        references:{
-          model:'Cities',   //kyunki table ka name cities hai na ki city
-          key:'id',
-          as:'cityId',
-        },
-        allowNull:false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Cities',
+          key: 'id',
+          as: 'cityId' 
       },
+      allowNull: false
+    },
       createdAt: {
-        allowNull: false,
+        allowNull: false ,
         type: Sequelize.DATE
       },
       updatedAt: {
