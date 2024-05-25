@@ -42,4 +42,17 @@
 27) We have make getAllCity . if you dont pass any parameter then it will fetch all city but if you pass query param it will filter.
 28) We have created another model Airport . 
 29) We have to associate the both that's why we have written in associate functions in models.
-30) We have also updated migration file of airport 
+30) We have also updated migration file of airport .
+31) We have make a seeder file with command npx sequelize seed:generate --name add-airports. It helps us to fill database without and request. We can do hardcode.
+32) To do the below things we should first import City and Airport from models
+const city=await City.findOne({
+      where:{
+        id:7
+      }
+    });
+    const airport=await city.getAirports();
+    console.log(city,airport);         This we can do in main index.js file to get all the airports associated with that city.
+
+33) We have to do db.sequelize.sync to sync the two tables instead of JOIN which we do in Sql . But we dont need to do it everytime . That's why we written in .env and we need we will uncomment it.
+34) Now we are making Airplane model.
+35) 
