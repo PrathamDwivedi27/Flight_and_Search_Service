@@ -6,6 +6,7 @@ const ApiRoutes = require("./routes/index");
 
 const db=require('./models/index');
 // const {City,Airport}=require('./models/index');
+const {airplanes}=require('./models/index');
 
 
 const setupAndStartServer = async () => {
@@ -21,8 +22,11 @@ const setupAndStartServer = async () => {
     console.log(`Server started at ${PORT}`);
     if(process.env.SYNC_DB){
       db.sequelize.sync({alter:true});      //only one time after every association
-
     }
+
+    
+
+
   });
   // console.log(process.env);
 };
