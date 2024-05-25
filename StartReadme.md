@@ -40,4 +40,6 @@
 25) Now call will be initiated from main index.js so api/v1/ so api will logic will be there
 26) Check that on Postman
 27) We have make getAllCity . if you dont pass any parameter then it will fetch all city but if you pass query param it will filter.
-28) 
+28) We have created another model Airport . 
+29) We have to associate the both that's why we have written in associate functions in models.
+30) We have also updated migration file of airport 
