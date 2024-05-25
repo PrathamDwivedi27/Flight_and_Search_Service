@@ -55,4 +55,8 @@ const city=await City.findOne({
 
 33) We have to do db.sequelize.sync to sync the two tables instead of JOIN which we do in Sql . But we dont need to do it everytime . That's why we written in .env and we need we will uncomment it.
 34) Now we are making Airplane model.
-35) 
+35) await airplanes.create({
+      modelName:"Bombardier CRJ-200",
+
+    }) we can do this to add manually it is as easy as that.
+36) We have made Flights model.
