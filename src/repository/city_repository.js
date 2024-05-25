@@ -55,6 +55,17 @@ class CityRepository {
       throw error;
     }
   }
+
+  async getAllCities(){
+    try {
+      const cities=await City.findAll();
+      return cities;
+    } catch (error) {
+      console.log("Something went wrong at repository level");
+      console.log(error);
+      throw error;
+    }
+  }
 }
 
 module.exports = CityRepository; //ye class hai to jha import karoge wha object banana padega pehle
