@@ -39,4 +39,5 @@
 24) Now we are making a folder routes so that we can systematically direct the urls. You can see the diagram in copy.
 25) Now call will be initiated from main index.js so api/v1/ so api will logic will be there
 26) Check that on Postman
-27) 
+27) We have make getAllCity . if you dont pass any parameter then it will fetch all city but if you pass query param it will filter.
+28) 

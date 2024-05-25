@@ -47,9 +47,9 @@ class CityService {
     }
   }
 
-  async getAllCities(){
+  async getAllCities(filter){
     try {
-      const cities=await this.cityRepository.getAllCities();
+      const cities=await this.cityRepository.getAllCities({name:filter.name});  //taaki koi aur parameter na aaye sirf name rhe filter ke liye
       return cities;
     } catch (error) {
       console.log("Something wrong at service layer");

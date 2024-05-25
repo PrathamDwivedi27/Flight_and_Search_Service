@@ -80,7 +80,7 @@ const get = async (req, res) => {
 
 const getAll=async (req,res)=>{
   try {
-    const cities=await cityService.getAllCities();
+    const cities=await cityService.getAllCities(req.query);   //becoz data is coming from query parameter
     return res.status(200).json({
       data: cities,
       success: true,
