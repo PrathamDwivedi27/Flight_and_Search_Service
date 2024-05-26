@@ -60,3 +60,6 @@ const city=await City.findOne({
 
     }) we can do this to add manually it is as easy as that.
 36) We have made Flights model.
+37) We need total seats that we will get from airplane. so make airplane repository also.
+38) We will write bussiness logic in utils folder like comparing dates etc.
+39) 
