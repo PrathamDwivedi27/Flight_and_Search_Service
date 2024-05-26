@@ -62,4 +62,7 @@ const city=await City.findOne({
 36) We have made Flights model.
 37) We need total seats that we will get from airplane. so make airplane repository also.
 38) We will write bussiness logic in utils folder like comparing dates etc.
-39) 
+39) We are making CRUD API for flights because flights has very much data.
+40) agar minPrice maxPrice dono set karoge to uske beech ka nhi aayega kyunki price ko hi assign kar rhe ho .
+ek baar minprice assign hua aur agle hi baar tum uska maxprice assign kar diye . isliye between use karo ya and. syntax Op ka dekh lena documentation se.
+41) We have made a crud repository and we will call it . IT will make everything very easy. We have made a airport repository to demonstrate the same.
