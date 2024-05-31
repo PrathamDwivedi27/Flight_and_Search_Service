@@ -1,5 +1,5 @@
 const {Flights}=require('../models/index');
-const {Op}=require('sequelize');
+const {Op, where}=require('sequelize');
 
 class FlightRepository{
 
@@ -51,6 +51,20 @@ class FlightRepository{
                 where:filterObject
             });
             return flight;
+        } catch (error) {
+            console.log("Something went wrong at repository level");
+            throw error;
+        }
+    }
+
+    async updateFlight(flightId,data){
+        try {
+            await Flights.update(data,{
+                where:{
+                    id:flightId
+                }
+            })
+            return true;
         } catch (error) {
             console.log("Something went wrong at repository level");
             throw error;

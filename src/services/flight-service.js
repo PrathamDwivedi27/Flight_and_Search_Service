@@ -18,7 +18,7 @@ class FlightService{
             });
             return flight;
         } catch (error) {
-            console.log("Something went wrong at repository level");
+            console.log("Something went wrong at service level");
             throw error;
         }
     }
@@ -27,6 +27,27 @@ class FlightService{
         try {
             const flights=await this.flightRepository.getAllFlights(data);
             return flights;
+        } catch (error) {
+            console.log("Something went wrong at service level");
+            throw error;
+        }
+    }
+
+    async getFlight(flightId){
+        try {
+            console.log(flightId);
+            const flight=await this.flightRepository.getFlight(flightId);
+            return flight;
+        } catch (error) {
+            console.log("Something went wrong at repository level");
+            throw error;
+        }
+    }
+
+    async updateFlight(flightId,data){
+        try {
+            const response=await this.flightRepository.updateFlight(flightId,data);
+            return response;
         } catch (error) {
             console.log("Something went wrong at repository level");
             throw error;
